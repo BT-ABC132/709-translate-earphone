@@ -1,0 +1,2075 @@
+{
+ "enable": true,
+ "name": "pipeline-tone-normal",
+ "uuid": "0X7674",
+ "childrenGroup": [
+  {
+   "id": 1652666280629,
+   "title": "单独播提示音",
+   "select": true,
+   "tabs": [
+    {
+     "id": "id_1677549518737_0",
+     "title": "参数组1",
+     "disable": false,
+     "selected": "A",
+     "preset": ""
+    }
+   ],
+   "curTab": "id_1677549518737_0"
+  }
+ ],
+ "nodeData": {
+  "cells": [
+   {
+    "position": {
+     "x": 240,
+     "y": 280
+    },
+    "size": {
+     "width": 80,
+     "height": 80
+    },
+    "view": "vue-shape-view",
+    "shape": "vue-shape",
+    "id": "f087e123-aac3-473c-842f-61e1c40009f7",
+    "component": "node-cust",
+    "group": "hardware",
+    "data": {
+     "num": 4,
+     "name": "提示音",
+     "group": "输入输出",
+     "type": 0,
+     "fun": 0,
+     "formFile": "../../.按键列表配置.json",
+     "uuid": "0X768A",
+     "itemId": 1652666280629,
+     "subId": 1,
+     "configs": {
+      "name": "",
+      "list": []
+     },
+     "marco": "TCFG_TONE_NODE_ENABLE",
+     "dynamicPort": {
+      "iMax": 0,
+      "iMin": 0,
+      "oMax": 0,
+      "oMin": 0
+     }
+    },
+    "ports": {
+     "groups": {
+      "in": {
+       "position": "left"
+      },
+      "out": {
+       "position": "right",
+       "attrs": {
+        "text": {
+         "fill": "#2b3f57",
+         "font-size": "12",
+         "visibility": "visible",
+         "text": ""
+        },
+        "circle": {
+         "r": 6,
+         "magnet": true,
+         "stroke": "#7DC06E",
+         "strokeWidth": 2,
+         "fill": "#f2f2f2",
+         "event": "port:click",
+         "style": {
+          "visibility": "visible"
+         }
+        }
+       }
+      }
+     },
+     "items": [
+      {
+       "group": "out",
+       "id": "cdc99af1-9b69-4ebc-bcbe-f87b87d71181",
+       "index": 0
+      }
+     ]
+    }
+   },
+   {
+    "shape": "edge",
+    "attrs": {
+     "line": {
+      "stroke": "#A4A5A9",
+      "strokeWidth": "2px",
+      "targetMarker": {
+       "tagName": "path",
+       "d": "M 12 -5 0 0 12 5 Z",
+       "strokeWidth": 2,
+       "fill": "#A4A5A9",
+       "stroke": "#A4A5A9"
+      },
+      "distance": 40
+     }
+    },
+    "id": "bf013368-c878-4b00-8fd2-b67056756e60",
+    "data": {
+     "itemId": 1652666280629
+    },
+    "source": {
+     "cell": "f087e123-aac3-473c-842f-61e1c40009f7",
+     "port": "cdc99af1-9b69-4ebc-bcbe-f87b87d71181"
+    },
+    "target": {
+     "cell": "d52ec50a-3cb4-4b5b-b192-0aff94fc77ea",
+     "port": "f6b1a025-238f-476a-8a35-7e285b7eb193"
+    }
+   },
+   {
+    "position": {
+     "x": 400,
+     "y": 280
+    },
+    "size": {
+     "width": 80,
+     "height": 80
+    },
+    "view": "vue-shape-view",
+    "shape": "vue-shape",
+    "id": "d52ec50a-3cb4-4b5b-b192-0aff94fc77ea",
+    "component": "node-cust",
+    "group": "hardware",
+    "data": {
+     "num": 3,
+     "name": "解码器",
+     "group": "编解码",
+     "type": 1,
+     "fun": 0,
+     "uuid": "0X1A85",
+     "itemId": 1652666280629,
+     "subId": 1,
+     "configs": {
+      "name": "",
+      "list": []
+     }
+    },
+    "ports": {
+     "groups": {
+      "in": {
+       "position": "left"
+      },
+      "out": {
+       "position": "right",
+       "attrs": {
+        "text": {
+         "fill": "#2b3f57",
+         "font-size": "12",
+         "visibility": "visible",
+         "text": ""
+        },
+        "circle": {
+         "r": 6,
+         "magnet": true,
+         "stroke": "#7DC06E",
+         "strokeWidth": 2,
+         "fill": "#f2f2f2",
+         "event": "port:click",
+         "style": {
+          "visibility": "visible"
+         }
+        }
+       }
+      }
+     },
+     "items": [
+      {
+       "group": "in",
+       "id": "f6b1a025-238f-476a-8a35-7e285b7eb193",
+       "index": 0
+      },
+      {
+       "group": "out",
+       "id": "c3184336-f5f8-4399-acb7-61531732c642",
+       "index": 0
+      }
+     ]
+    }
+   },
+   {
+    "shape": "edge",
+    "attrs": {
+     "line": {
+      "stroke": "#A4A5A9",
+      "strokeWidth": "2px",
+      "targetMarker": {
+       "tagName": "path",
+       "d": "M 12 -5 0 0 12 5 Z",
+       "strokeWidth": 2,
+       "fill": "#A4A5A9",
+       "stroke": "#A4A5A9"
+      },
+      "distance": 40
+     }
+    },
+    "id": "2caa9334-fbea-4d8c-9579-f0e22b631068",
+    "data": {
+     "itemId": 1652666280629
+    },
+    "source": {
+     "cell": "d52ec50a-3cb4-4b5b-b192-0aff94fc77ea",
+     "port": "c3184336-f5f8-4399-acb7-61531732c642"
+    },
+    "target": {
+     "cell": "7e7a05f5-3a4d-43fb-a4a2-bea6eedf59bd",
+     "port": "e603488f-6e9b-497f-9aa1-2a74ee00ff5e"
+    }
+   },
+   {
+    "position": {
+     "x": 560,
+     "y": 280
+    },
+    "size": {
+     "width": 120,
+     "height": 80
+    },
+    "view": "vue-shape-view",
+    "shape": "vue-shape",
+    "id": "7e7a05f5-3a4d-43fb-a4a2-bea6eedf59bd",
+    "component": "node-cust",
+    "group": "hardware",
+    "data": {
+     "name": "蓝牙音频同步",
+     "group": "控制",
+     "uuid": "0XA576",
+     "type": 1,
+     "fun": 1,
+     "formFile": "../../.sync配置.json",
+     "itemId": 1652666280629,
+     "subId": 1,
+     "configs": {
+      "name": "config423581",
+      "list": [
+       {
+        "name": "config423581",
+        "current": "",
+        "list": [
+         {
+          "name": "arg0",
+          "data": [
+           {
+            "id": "id_1693539807876_1",
+            "list": [
+             {
+              "id": "id_1693469084872_1",
+              "value": 1
+             }
+            ]
+           }
+          ],
+          "enable": true
+         }
+        ],
+        "modeId": "id_1677549518737_0"
+       }
+      ]
+     }
+    },
+    "ports": {
+     "groups": {
+      "in": {
+       "position": "left"
+      },
+      "out": {
+       "position": "right",
+       "attrs": {
+        "text": {
+         "fill": "#2b3f57",
+         "font-size": "12",
+         "visibility": "visible",
+         "text": ""
+        },
+        "circle": {
+         "r": 6,
+         "magnet": true,
+         "stroke": "#7DC06E",
+         "strokeWidth": 2,
+         "fill": "#f2f2f2",
+         "event": "port:click",
+         "style": {
+          "visibility": "visible"
+         }
+        }
+       }
+      }
+     },
+     "items": [
+      {
+       "group": "in",
+       "index": 0,
+       "id": "e603488f-6e9b-497f-9aa1-2a74ee00ff5e"
+      },
+      {
+       "group": "out",
+       "index": 0,
+       "id": "b71c2066-9e03-4698-9ed3-2e714f17e78a"
+      }
+     ]
+    }
+   },
+   {
+    "shape": "edge",
+    "attrs": {
+     "line": {
+      "stroke": "#A4A5A9",
+      "strokeWidth": "2px",
+      "targetMarker": {
+       "tagName": "path",
+       "d": "M 12 -5 0 0 12 5 Z",
+       "strokeWidth": 2,
+       "fill": "#A4A5A9",
+       "stroke": "#A4A5A9"
+      },
+      "distance": 40
+     }
+    },
+    "id": "58f4738b-2378-4302-86bf-d10662f79654",
+    "data": {
+     "itemId": 1652666280629
+    },
+    "source": {
+     "cell": "7e7a05f5-3a4d-43fb-a4a2-bea6eedf59bd",
+     "port": "b71c2066-9e03-4698-9ed3-2e714f17e78a"
+    },
+    "target": {
+     "cell": "fa6e2a61-9864-4973-be3c-294d1b5feb55",
+     "port": "fb076936-fb8e-408a-9e5a-1462ed222bb6"
+    }
+   },
+   {
+    "position": {
+     "x": 760,
+     "y": 280
+    },
+    "size": {
+     "width": 120,
+     "height": 80
+    },
+    "view": "vue-shape-view",
+    "shape": "vue-shape",
+    "id": "fa6e2a61-9864-4973-be3c-294d1b5feb55",
+    "component": "node-cust",
+    "group": "hardware",
+    "data": {
+     "name": "音量控制器",
+     "group": "控制",
+     "uuid": "0X74E3",
+     "type": 1,
+     "fun": 1,
+     "formFile": "../../.音量配置.json",
+     "itemId": 1652666280629,
+     "subId": 1,
+     "configs": {
+      "name": "Vol_SysTone",
+      "list": [
+       {
+        "modeId": "id_1677549518737_0",
+        "name": "Vol_SysTone",
+        "current": "arg0",
+        "list": [
+         {
+          "name": "arg0",
+          "data": [
+           {
+            "id": "id_1676447331464_3",
+            "list": [
+             {
+              "id": "id_1681280938229_0",
+              "value": 0
+             },
+             {
+              "id": "id_1676447481291_4",
+              "value": 16
+             },
+             {
+              "id": "id_1676447941026_6",
+              "value": -45
+             },
+             {
+              "id": "id_1678088452701_0",
+              "value": 1
+             },
+             {
+              "id": "id_1677290960342_0",
+              "value": 0
+             },
+             {
+              "id": "id_1690535811640_0",
+              "value": 8
+             },
+             {
+              "id": "id_1676801188975_0",
+              "value": 8
+             }
+            ]
+           },
+           {
+            "id": "id_1677751149521_1",
+            "list": []
+           }
+          ],
+          "enable": true,
+          "bypass": false
+         }
+        ],
+        "bypass": false
+       }
+      ]
+     }
+    },
+    "ports": {
+     "groups": {
+      "in": {
+       "position": "left"
+      },
+      "out": {
+       "position": "right",
+       "attrs": {
+        "text": {
+         "fill": "#2b3f57",
+         "font-size": "12",
+         "visibility": "visible",
+         "text": ""
+        },
+        "circle": {
+         "r": 6,
+         "magnet": true,
+         "stroke": "#7DC06E",
+         "strokeWidth": 2,
+         "fill": "#f2f2f2",
+         "event": "port:click",
+         "style": {
+          "visibility": "visible"
+         }
+        }
+       }
+      }
+     },
+     "items": [
+      {
+       "group": "in",
+       "index": 0,
+       "id": "fb076936-fb8e-408a-9e5a-1462ed222bb6"
+      },
+      {
+       "group": "out",
+       "index": 0,
+       "id": "4decb197-2782-4173-a600-958942b8109d"
+      }
+     ]
+    }
+   },
+   {
+    "shape": "edge",
+    "attrs": {
+     "line": {
+      "stroke": "#A4A5A9",
+      "strokeWidth": "2px",
+      "targetMarker": {
+       "tagName": "path",
+       "d": "M 12 -5 0 0 12 5 Z",
+       "strokeWidth": 2,
+       "fill": "#A4A5A9",
+       "stroke": "#A4A5A9"
+      },
+      "distance": 40
+     }
+    },
+    "id": "0ea9c867-c90c-4fc1-96d4-2a4f0ded819f",
+    "data": {
+     "itemId": 1652666280629
+    },
+    "source": {
+     "cell": "fa6e2a61-9864-4973-be3c-294d1b5feb55",
+     "port": "4decb197-2782-4173-a600-958942b8109d"
+    },
+    "target": {
+     "cell": "fd9f849a-0cfc-4a55-82a3-3e69bb0f79dd",
+     "port": "cd9a2388-655e-4ea7-b6cd-d13159326b91"
+    }
+   },
+   {
+    "position": {
+     "x": 960,
+     "y": 280
+    },
+    "size": {
+     "width": 80,
+     "height": 80
+    },
+    "view": "vue-shape-view",
+    "shape": "vue-shape",
+    "id": "fd9f849a-0cfc-4a55-82a3-3e69bb0f79dd",
+    "component": "node-cust",
+    "group": "hardware",
+    "data": {
+     "name": "BitWidth Convert",
+     "group": "渲染",
+     "uuid": "0X7DE5",
+     "type": 1,
+     "fun": 0,
+     "marco": "TCFG_CONVERT_NODE_ENABLE",
+     "inBit": 2,
+     "bitConsistency": false,
+     "outBit": 2,
+     "subId": 13,
+     "itemId": 1652666280629,
+     "configs": {
+      "name": "",
+      "list": []
+     },
+     "nodeDoc": "\\docs\\html\\SDK\\audio_effects\\BitWidth_Convert_manual.html",
+     "dynamicPort": {
+      "iMax": 0,
+      "iMin": 0,
+      "oMax": 0,
+      "oMin": 0
+     }
+    },
+    "ports": {
+     "groups": {
+      "in": {
+       "position": "left"
+      },
+      "out": {
+       "position": "right",
+       "attrs": {
+        "text": {
+         "fill": "#2b3f57",
+         "font-size": "12",
+         "visibility": "visible",
+         "text": ""
+        },
+        "circle": {
+         "r": 6,
+         "magnet": true,
+         "stroke": "#7DC06E",
+         "strokeWidth": 2,
+         "fill": "#f2f2f2",
+         "event": "port:click",
+         "style": {
+          "visibility": "visible"
+         }
+        }
+       }
+      }
+     },
+     "items": [
+      {
+       "group": "in",
+       "index": 0,
+       "id": "cd9a2388-655e-4ea7-b6cd-d13159326b91"
+      },
+      {
+       "group": "out",
+       "index": 1,
+       "id": "80ebc7f7-1a6c-4a89-bf59-9b7d3d17ee92"
+      }
+     ]
+    }
+   },
+   {
+    "shape": "edge",
+    "attrs": {
+     "line": {
+      "stroke": "#A4A5A9",
+      "strokeWidth": "2px",
+      "targetMarker": {
+       "tagName": "path",
+       "d": "M 12 -5 0 0 12 5 Z",
+       "strokeWidth": 2,
+       "fill": "#A4A5A9",
+       "stroke": "#A4A5A9"
+      },
+      "distance": 40
+     }
+    },
+    "id": "8efcb5d7-25fe-44c7-a29d-f6bfafe8a7d2",
+    "data": {
+     "itemId": 1652666280629
+    },
+    "source": {
+     "cell": "fd9f849a-0cfc-4a55-82a3-3e69bb0f79dd",
+     "port": "80ebc7f7-1a6c-4a89-bf59-9b7d3d17ee92"
+    },
+    "target": {
+     "cell": "ecfcab75-fe7e-49c0-ba6d-a249dea94b10",
+     "port": "affc17ac-7fd4-4f15-8df2-083e80e03886"
+    }
+   },
+   {
+    "position": {
+     "x": 1120,
+     "y": 280
+    },
+    "size": {
+     "width": 80,
+     "height": 80
+    },
+    "view": "vue-shape-view",
+    "shape": "vue-shape",
+    "id": "ecfcab75-fe7e-49c0-ba6d-a249dea94b10",
+    "component": "node-cust",
+    "group": "hardware",
+    "data": {
+     "num": 1,
+     "name": "DAC",
+     "group": "输入输出",
+     "type": 2,
+     "fun": 1,
+     "formFile": "../../.DAC配置.json",
+     "uuid": "0XDCCD",
+     "itemId": 1652666280629,
+     "subId": 1,
+     "configs": {
+      "name": "DAC1",
+      "list": [
+       {
+        "modeId": "id_1677549518737_0",
+        "name": "DAC1",
+        "current": "arg0",
+        "list": [
+         {
+          "name": "arg0",
+          "data": [
+           {
+            "id": "id_1678246437678_10",
+            "list": [
+             {
+              "id": "id_1677642341249_0",
+              "value": 30
+             },
+             {
+              "id": "id_1677642343355_1",
+              "value": 8
+             },
+             {
+              "id": "id_1677642344547_2",
+              "value": 0
+             }
+            ]
+           }
+          ],
+          "enable": true,
+          "bypass": false
+         }
+        ],
+        "bypass": false
+       }
+      ]
+     },
+     "marco": "TCFG_DAC_NODE_ENABLE",
+     "dynamicPort": {
+      "iMax": 0,
+      "iMin": 0,
+      "oMax": 0,
+      "oMin": 0
+     }
+    },
+    "ports": {
+     "groups": {
+      "in": {
+       "position": "left"
+      },
+      "out": {
+       "position": "right",
+       "attrs": {
+        "text": {
+         "fill": "#2b3f57",
+         "font-size": "12",
+         "visibility": "visible",
+         "text": ""
+        },
+        "circle": {
+         "r": 6,
+         "magnet": true,
+         "stroke": "#7DC06E",
+         "strokeWidth": 2,
+         "fill": "#f2f2f2",
+         "event": "port:click",
+         "style": {
+          "visibility": "visible"
+         }
+        }
+       }
+      }
+     },
+     "items": [
+      {
+       "group": "in",
+       "id": "affc17ac-7fd4-4f15-8df2-083e80e03886",
+       "index": 0
+      }
+     ]
+    }
+   },
+   {
+    "position": {
+     "x": 240,
+     "y": 400
+    },
+    "size": {
+     "width": 80,
+     "height": 80
+    },
+    "view": "vue-shape-view",
+    "shape": "vue-shape",
+    "id": "90416b1b-f9ab-4b7d-8ddd-8f1ea8bb5f1f",
+    "component": "node-cust",
+    "group": "hardware",
+    "data": {
+     "name": "按键音",
+     "group": "输入输出",
+     "uuid": "0X8346",
+     "type": 0,
+     "fun": 0,
+     "itemId": 1652666280629,
+     "subId": 1,
+     "configs": {
+      "name": "",
+      "list": []
+     },
+     "marco": "TCFG_KEY_TONE_NODE_ENABLE",
+     "dynamicPort": {
+      "iMax": 0,
+      "iMin": 0,
+      "oMax": 0,
+      "oMin": 0
+     }
+    },
+    "ports": {
+     "groups": {
+      "in": {
+       "position": "left"
+      },
+      "out": {
+       "position": "right",
+       "attrs": {
+        "text": {
+         "fill": "#2b3f57",
+         "font-size": "12",
+         "visibility": "visible",
+         "text": ""
+        },
+        "circle": {
+         "r": 6,
+         "magnet": true,
+         "stroke": "#7DC06E",
+         "strokeWidth": 2,
+         "fill": "#f2f2f2",
+         "event": "port:click",
+         "style": {
+          "visibility": "visible"
+         }
+        }
+       }
+      }
+     },
+     "items": [
+      {
+       "group": "out",
+       "index": 0,
+       "id": "01179ddf-66ce-4fcd-96bb-c7be7b8de8b1"
+      }
+     ]
+    }
+   },
+   {
+    "shape": "edge",
+    "attrs": {
+     "line": {
+      "stroke": "#A4A5A9",
+      "strokeWidth": "2px",
+      "targetMarker": {
+       "tagName": "path",
+       "d": "M 12 -5 0 0 12 5 Z",
+       "strokeWidth": 2,
+       "fill": "#A4A5A9",
+       "stroke": "#A4A5A9"
+      },
+      "distance": 40
+     }
+    },
+    "id": "37a531c1-0611-4714-8580-8aa9448de3ee",
+    "data": {
+     "itemId": 1652666280629
+    },
+    "source": {
+     "cell": "90416b1b-f9ab-4b7d-8ddd-8f1ea8bb5f1f",
+     "port": "01179ddf-66ce-4fcd-96bb-c7be7b8de8b1"
+    },
+    "target": {
+     "cell": "31f6c6f6-0a13-498f-aa3d-0b2893cddc78",
+     "port": "f6b1a025-238f-476a-8a35-7e285b7eb193"
+    }
+   },
+   {
+    "position": {
+     "x": 400,
+     "y": 400
+    },
+    "size": {
+     "width": 80,
+     "height": 80
+    },
+    "view": "vue-shape-view",
+    "shape": "vue-shape",
+    "id": "31f6c6f6-0a13-498f-aa3d-0b2893cddc78",
+    "component": "node-cust",
+    "group": "hardware",
+    "data": {
+     "num": 3,
+     "name": "解码器",
+     "group": "编解码",
+     "type": 1,
+     "fun": 0,
+     "uuid": "0X1A85",
+     "itemId": 1652666280629,
+     "subId": 2,
+     "configs": {
+      "name": "",
+      "list": []
+     }
+    },
+    "ports": {
+     "groups": {
+      "in": {
+       "position": "left"
+      },
+      "out": {
+       "position": "right",
+       "attrs": {
+        "text": {
+         "fill": "#2b3f57",
+         "font-size": "12",
+         "visibility": "visible",
+         "text": ""
+        },
+        "circle": {
+         "r": 6,
+         "magnet": true,
+         "stroke": "#7DC06E",
+         "strokeWidth": 2,
+         "fill": "#f2f2f2",
+         "event": "port:click",
+         "style": {
+          "visibility": "visible"
+         }
+        }
+       }
+      }
+     },
+     "items": [
+      {
+       "group": "in",
+       "id": "f6b1a025-238f-476a-8a35-7e285b7eb193",
+       "index": 0
+      },
+      {
+       "group": "out",
+       "id": "c3184336-f5f8-4399-acb7-61531732c642",
+       "index": 0
+      }
+     ]
+    }
+   },
+   {
+    "shape": "edge",
+    "attrs": {
+     "line": {
+      "stroke": "#A4A5A9",
+      "strokeWidth": "2px",
+      "targetMarker": {
+       "tagName": "path",
+       "d": "M 12 -5 0 0 12 5 Z",
+       "strokeWidth": 2,
+       "fill": "#A4A5A9",
+       "stroke": "#A4A5A9"
+      },
+      "distance": 40
+     }
+    },
+    "id": "36c50c2c-6302-45e5-8b82-6870e6e024f4",
+    "data": {
+     "itemId": 1652666280629
+    },
+    "source": {
+     "cell": "31f6c6f6-0a13-498f-aa3d-0b2893cddc78",
+     "port": "c3184336-f5f8-4399-acb7-61531732c642"
+    },
+    "target": {
+     "cell": "4f9af172-1bc1-4724-b8a1-9e7156b93f40",
+     "port": "14c9c71a-e725-4f0f-abf1-78be39cbb35f"
+    }
+   },
+   {
+    "position": {
+     "x": 560,
+     "y": 400
+    },
+    "size": {
+     "width": 120,
+     "height": 80
+    },
+    "view": "vue-shape-view",
+    "shape": "vue-shape",
+    "id": "4f9af172-1bc1-4724-b8a1-9e7156b93f40",
+    "component": "node-cust",
+    "group": "hardware",
+    "data": {
+     "name": "SRC",
+     "group": "渲染",
+     "uuid": "0X1ECD",
+     "type": 1,
+     "fun": 0,
+     "itemId": 1652666280629,
+     "subId": 1,
+     "configs": {
+      "name": "",
+      "list": []
+     }
+    },
+    "ports": {
+     "groups": {
+      "in": {
+       "position": "left"
+      },
+      "out": {
+       "position": "right",
+       "attrs": {
+        "text": {
+         "fill": "#2b3f57",
+         "font-size": "12",
+         "visibility": "visible",
+         "text": ""
+        },
+        "circle": {
+         "r": 6,
+         "magnet": true,
+         "stroke": "#7DC06E",
+         "strokeWidth": 2,
+         "fill": "#f2f2f2",
+         "event": "port:click",
+         "style": {
+          "visibility": "visible"
+         }
+        }
+       }
+      }
+     },
+     "items": [
+      {
+       "group": "in",
+       "index": 0,
+       "id": "14c9c71a-e725-4f0f-abf1-78be39cbb35f"
+      },
+      {
+       "group": "out",
+       "index": 0,
+       "id": "49d0bf9f-e0f8-49fc-9103-30eabb9a687d"
+      }
+     ]
+    }
+   },
+   {
+    "shape": "edge",
+    "attrs": {
+     "line": {
+      "stroke": "#A4A5A9",
+      "strokeWidth": "2px",
+      "targetMarker": {
+       "tagName": "path",
+       "d": "M 12 -5 0 0 12 5 Z",
+       "strokeWidth": 2,
+       "fill": "#A4A5A9",
+       "stroke": "#A4A5A9"
+      },
+      "distance": 40
+     }
+    },
+    "id": "74964d8c-9bcf-4b11-b0c5-1f1bcb82d51f",
+    "data": {
+     "itemId": 1652666280629
+    },
+    "source": {
+     "cell": "4f9af172-1bc1-4724-b8a1-9e7156b93f40",
+     "port": "49d0bf9f-e0f8-49fc-9103-30eabb9a687d"
+    },
+    "target": {
+     "cell": "59e2f9b0-59e1-47d0-9c9b-a81d57dcca91",
+     "port": "fb076936-fb8e-408a-9e5a-1462ed222bb6"
+    }
+   },
+   {
+    "position": {
+     "x": 760,
+     "y": 400
+    },
+    "size": {
+     "width": 120,
+     "height": 80
+    },
+    "view": "vue-shape-view",
+    "shape": "vue-shape",
+    "id": "59e2f9b0-59e1-47d0-9c9b-a81d57dcca91",
+    "component": "node-cust",
+    "group": "hardware",
+    "data": {
+     "name": "音量控制器",
+     "group": "控制",
+     "uuid": "0X74E3",
+     "type": 1,
+     "fun": 1,
+     "formFile": "../../.音量配置.json",
+     "itemId": 1652666280629,
+     "subId": 2,
+     "configs": {
+      "name": "Vol_SysKTone",
+      "list": [
+       {
+        "modeId": "id_1677549518737_0",
+        "name": "Vol_SysKTone",
+        "current": "arg0",
+        "list": [
+         {
+          "name": "arg0",
+          "data": [
+           {
+            "id": "id_1676447331464_3",
+            "list": [
+             {
+              "id": "id_1681280938229_0",
+              "value": 0
+             },
+             {
+              "id": "id_1676447481291_4",
+              "value": 16
+             },
+             {
+              "id": "id_1676447941026_6",
+              "value": -45
+             },
+             {
+              "id": "id_1678088452701_0",
+              "value": 1
+             },
+             {
+              "id": "id_1677290960342_0",
+              "value": 0
+             },
+             {
+              "id": "id_1690535811640_0",
+              "value": 8
+             },
+             {
+              "id": "id_1676801188975_0",
+              "value": 8
+             }
+            ]
+           },
+           {
+            "id": "id_1677751149521_1",
+            "list": []
+           }
+          ],
+          "enable": true,
+          "bypass": false
+         }
+        ],
+        "bypass": false
+       }
+      ]
+     }
+    },
+    "ports": {
+     "groups": {
+      "in": {
+       "position": "left"
+      },
+      "out": {
+       "position": "right",
+       "attrs": {
+        "text": {
+         "fill": "#2b3f57",
+         "font-size": "12",
+         "visibility": "visible",
+         "text": ""
+        },
+        "circle": {
+         "r": 6,
+         "magnet": true,
+         "stroke": "#7DC06E",
+         "strokeWidth": 2,
+         "fill": "#f2f2f2",
+         "event": "port:click",
+         "style": {
+          "visibility": "visible"
+         }
+        }
+       }
+      }
+     },
+     "items": [
+      {
+       "group": "in",
+       "index": 0,
+       "id": "fb076936-fb8e-408a-9e5a-1462ed222bb6"
+      },
+      {
+       "group": "out",
+       "index": 0,
+       "id": "4decb197-2782-4173-a600-958942b8109d"
+      }
+     ]
+    }
+   },
+   {
+    "shape": "edge",
+    "attrs": {
+     "line": {
+      "stroke": "#A4A5A9",
+      "strokeWidth": "2px",
+      "targetMarker": {
+       "tagName": "path",
+       "d": "M 12 -5 0 0 12 5 Z",
+       "strokeWidth": 2,
+       "fill": "#A4A5A9",
+       "stroke": "#A4A5A9"
+      },
+      "distance": 40
+     }
+    },
+    "id": "833cfb1f-59eb-4eac-a648-27be4e23b334",
+    "data": {
+     "itemId": 1652666280629
+    },
+    "source": {
+     "cell": "59e2f9b0-59e1-47d0-9c9b-a81d57dcca91",
+     "port": "4decb197-2782-4173-a600-958942b8109d"
+    },
+    "target": {
+     "cell": "83415d8b-3844-4ce2-9cfc-ec1ce7c47035",
+     "port": "cd9a2388-655e-4ea7-b6cd-d13159326b91"
+    }
+   },
+   {
+    "position": {
+     "x": 960,
+     "y": 400
+    },
+    "size": {
+     "width": 80,
+     "height": 80
+    },
+    "view": "vue-shape-view",
+    "shape": "vue-shape",
+    "id": "83415d8b-3844-4ce2-9cfc-ec1ce7c47035",
+    "component": "node-cust",
+    "group": "hardware",
+    "data": {
+     "name": "BitWidth Convert",
+     "group": "渲染",
+     "uuid": "0X7DE5",
+     "type": 1,
+     "fun": 0,
+     "marco": "TCFG_CONVERT_NODE_ENABLE",
+     "inBit": 2,
+     "bitConsistency": false,
+     "outBit": 2,
+     "subId": 14,
+     "itemId": 1652666280629,
+     "configs": {
+      "name": "",
+      "list": []
+     },
+     "nodeDoc": "\\docs\\html\\SDK\\audio_effects\\BitWidth_Convert_manual.html",
+     "dynamicPort": {
+      "iMax": 0,
+      "iMin": 0,
+      "oMax": 0,
+      "oMin": 0
+     }
+    },
+    "ports": {
+     "groups": {
+      "in": {
+       "position": "left"
+      },
+      "out": {
+       "position": "right",
+       "attrs": {
+        "text": {
+         "fill": "#2b3f57",
+         "font-size": "12",
+         "visibility": "visible",
+         "text": ""
+        },
+        "circle": {
+         "r": 6,
+         "magnet": true,
+         "stroke": "#7DC06E",
+         "strokeWidth": 2,
+         "fill": "#f2f2f2",
+         "event": "port:click",
+         "style": {
+          "visibility": "visible"
+         }
+        }
+       }
+      }
+     },
+     "items": [
+      {
+       "group": "in",
+       "index": 0,
+       "id": "cd9a2388-655e-4ea7-b6cd-d13159326b91"
+      },
+      {
+       "group": "out",
+       "index": 1,
+       "id": "80ebc7f7-1a6c-4a89-bf59-9b7d3d17ee92"
+      }
+     ]
+    }
+   },
+   {
+    "shape": "edge",
+    "attrs": {
+     "line": {
+      "stroke": "#A4A5A9",
+      "strokeWidth": "2px",
+      "targetMarker": {
+       "tagName": "path",
+       "d": "M 12 -5 0 0 12 5 Z",
+       "strokeWidth": 2,
+       "fill": "#A4A5A9",
+       "stroke": "#A4A5A9"
+      },
+      "distance": 40
+     }
+    },
+    "id": "8d5ac3e4-e40b-4fc2-86f2-b3aa42932835",
+    "data": {
+     "itemId": 1652666280629
+    },
+    "source": {
+     "cell": "83415d8b-3844-4ce2-9cfc-ec1ce7c47035",
+     "port": "80ebc7f7-1a6c-4a89-bf59-9b7d3d17ee92"
+    },
+    "target": {
+     "cell": "0a8ed146-a84d-4837-bec3-375efb6fdd47",
+     "port": "affc17ac-7fd4-4f15-8df2-083e80e03886"
+    }
+   },
+   {
+    "position": {
+     "x": 1120,
+     "y": 400
+    },
+    "size": {
+     "width": 80,
+     "height": 80
+    },
+    "view": "vue-shape-view",
+    "shape": "vue-shape",
+    "id": "0a8ed146-a84d-4837-bec3-375efb6fdd47",
+    "component": "node-cust",
+    "group": "hardware",
+    "data": {
+     "num": 1,
+     "name": "DAC",
+     "group": "输入输出",
+     "type": 2,
+     "fun": 1,
+     "formFile": "../../.DAC配置.json",
+     "uuid": "0XDCCD",
+     "itemId": 1652666280629,
+     "subId": 17,
+     "configs": {
+      "name": "DAC17",
+      "list": [
+       {
+        "modeId": "id_1677549518737_0",
+        "name": "DAC17",
+        "current": "arg0",
+        "list": [
+         {
+          "name": "arg0",
+          "data": [
+           {
+            "id": "id_1678246437678_10",
+            "list": [
+             {
+              "id": "id_1677642341249_0",
+              "value": 30
+             },
+             {
+              "id": "id_1677642343355_1",
+              "value": 8
+             },
+             {
+              "id": "id_1677642344547_2",
+              "value": 0
+             }
+            ]
+           }
+          ],
+          "enable": true,
+          "bypass": false
+         }
+        ],
+        "bypass": false
+       }
+      ]
+     },
+     "marco": "TCFG_DAC_NODE_ENABLE",
+     "dynamicPort": {
+      "iMax": 0,
+      "iMin": 0,
+      "oMax": 0,
+      "oMin": 0
+     }
+    },
+    "ports": {
+     "groups": {
+      "in": {
+       "position": "left"
+      },
+      "out": {
+       "position": "right",
+       "attrs": {
+        "text": {
+         "fill": "#2b3f57",
+         "font-size": "12",
+         "visibility": "visible",
+         "text": ""
+        },
+        "circle": {
+         "r": 6,
+         "magnet": true,
+         "stroke": "#7DC06E",
+         "strokeWidth": 2,
+         "fill": "#f2f2f2",
+         "event": "port:click",
+         "style": {
+          "visibility": "visible"
+         }
+        }
+       }
+      }
+     },
+     "items": [
+      {
+       "group": "in",
+       "id": "affc17ac-7fd4-4f15-8df2-083e80e03886",
+       "index": 0
+      }
+     ]
+    }
+   },
+   {
+    "position": {
+     "x": 240,
+     "y": 520
+    },
+    "size": {
+     "width": 80,
+     "height": 80
+    },
+    "view": "vue-shape-view",
+    "shape": "vue-shape",
+    "id": "6c0205c1-ee60-41e3-a566-8ecffc1f3237",
+    "component": "node-cust",
+    "group": "hardware",
+    "data": {
+     "name": "铃声",
+     "group": "输入输出",
+     "uuid": "0XCADC",
+     "type": 0,
+     "fun": 0,
+     "subId": 1,
+     "itemId": 1652666280629,
+     "configs": {
+      "name": "",
+      "list": []
+     },
+     "marco": "TCFG_RING_TONE_NODE_ENABLE",
+     "dynamicPort": {
+      "iMax": 0,
+      "iMin": 0,
+      "oMax": 0,
+      "oMin": 0
+     }
+    },
+    "ports": {
+     "groups": {
+      "in": {
+       "position": "left"
+      },
+      "out": {
+       "position": "right",
+       "attrs": {
+        "text": {
+         "fill": "#2b3f57",
+         "font-size": "12",
+         "visibility": "visible",
+         "text": ""
+        },
+        "circle": {
+         "r": 6,
+         "magnet": true,
+         "stroke": "#7DC06E",
+         "strokeWidth": 2,
+         "fill": "#f2f2f2",
+         "event": "port:click",
+         "style": {
+          "visibility": "visible"
+         }
+        }
+       }
+      }
+     },
+     "items": [
+      {
+       "group": "out",
+       "index": 0,
+       "id": "dc9f133e-a8e4-4dad-9d7b-0ec5f5c78a6f"
+      }
+     ]
+    }
+   },
+   {
+    "shape": "edge",
+    "attrs": {
+     "line": {
+      "stroke": "#A4A5A9",
+      "strokeWidth": "2px",
+      "targetMarker": {
+       "tagName": "path",
+       "d": "M 12 -5 0 0 12 5 Z",
+       "strokeWidth": 2,
+       "fill": "#A4A5A9",
+       "stroke": "#A4A5A9"
+      },
+      "distance": 40
+     }
+    },
+    "id": "61eb1911-56f9-4b34-8be8-3460ddc0c57b",
+    "data": {
+     "itemId": 1652666280629
+    },
+    "source": {
+     "cell": "6c0205c1-ee60-41e3-a566-8ecffc1f3237",
+     "port": "dc9f133e-a8e4-4dad-9d7b-0ec5f5c78a6f"
+    },
+    "target": {
+     "cell": "f7df6e9d-3041-4a50-8a80-42a0fe8d59cc",
+     "port": "f6b1a025-238f-476a-8a35-7e285b7eb193"
+    }
+   },
+   {
+    "position": {
+     "x": 400,
+     "y": 520
+    },
+    "size": {
+     "width": 80,
+     "height": 80
+    },
+    "view": "vue-shape-view",
+    "shape": "vue-shape",
+    "id": "f7df6e9d-3041-4a50-8a80-42a0fe8d59cc",
+    "component": "node-cust",
+    "group": "hardware",
+    "data": {
+     "num": 3,
+     "name": "解码器",
+     "group": "编解码",
+     "type": 1,
+     "fun": 0,
+     "uuid": "0X1A85",
+     "itemId": 1652666280629,
+     "subId": 3,
+     "configs": {
+      "name": "",
+      "list": []
+     }
+    },
+    "ports": {
+     "groups": {
+      "in": {
+       "position": "left"
+      },
+      "out": {
+       "position": "right",
+       "attrs": {
+        "text": {
+         "fill": "#2b3f57",
+         "font-size": "12",
+         "visibility": "visible",
+         "text": ""
+        },
+        "circle": {
+         "r": 6,
+         "magnet": true,
+         "stroke": "#7DC06E",
+         "strokeWidth": 2,
+         "fill": "#f2f2f2",
+         "event": "port:click",
+         "style": {
+          "visibility": "visible"
+         }
+        }
+       }
+      }
+     },
+     "items": [
+      {
+       "group": "in",
+       "id": "f6b1a025-238f-476a-8a35-7e285b7eb193",
+       "index": 0
+      },
+      {
+       "group": "out",
+       "id": "c3184336-f5f8-4399-acb7-61531732c642",
+       "index": 0
+      }
+     ]
+    }
+   },
+   {
+    "shape": "edge",
+    "attrs": {
+     "line": {
+      "stroke": "#A4A5A9",
+      "strokeWidth": "2px",
+      "targetMarker": {
+       "tagName": "path",
+       "d": "M 12 -5 0 0 12 5 Z",
+       "strokeWidth": 2,
+       "fill": "#A4A5A9",
+       "stroke": "#A4A5A9"
+      },
+      "distance": 40
+     }
+    },
+    "id": "f886d5de-4857-45d7-ac1f-5e483c429d5b",
+    "data": {
+     "itemId": 1652666280629
+    },
+    "source": {
+     "cell": "f7df6e9d-3041-4a50-8a80-42a0fe8d59cc",
+     "port": "c3184336-f5f8-4399-acb7-61531732c642"
+    },
+    "target": {
+     "cell": "effb41ec-ea76-4355-b24c-0ed0c0bab2f5",
+     "port": "e603488f-6e9b-497f-9aa1-2a74ee00ff5e"
+    }
+   },
+   {
+    "position": {
+     "x": 560,
+     "y": 520
+    },
+    "size": {
+     "width": 120,
+     "height": 80
+    },
+    "view": "vue-shape-view",
+    "shape": "vue-shape",
+    "id": "effb41ec-ea76-4355-b24c-0ed0c0bab2f5",
+    "component": "node-cust",
+    "group": "hardware",
+    "data": {
+     "name": "蓝牙音频同步",
+     "group": "控制",
+     "uuid": "0XA576",
+     "type": 1,
+     "fun": 1,
+     "formFile": "../../.sync配置.json",
+     "itemId": 1652666280629,
+     "subId": 2,
+     "configs": {
+      "name": "config423582",
+      "list": [
+       {
+        "modeId": "id_1677549518737_0",
+        "name": "config423582",
+        "current": "",
+        "bypass": false,
+        "list": [
+         {
+          "name": "arg0",
+          "data": [
+           {
+            "id": "id_1693539807876_1",
+            "list": [
+             {
+              "id": "id_1693469084872_1",
+              "value": 1
+             }
+            ]
+           }
+          ],
+          "enable": true
+         }
+        ]
+       }
+      ]
+     }
+    },
+    "ports": {
+     "groups": {
+      "in": {
+       "position": "left"
+      },
+      "out": {
+       "position": "right",
+       "attrs": {
+        "text": {
+         "fill": "#2b3f57",
+         "font-size": "12",
+         "visibility": "visible",
+         "text": ""
+        },
+        "circle": {
+         "r": 6,
+         "magnet": true,
+         "stroke": "#7DC06E",
+         "strokeWidth": 2,
+         "fill": "#f2f2f2",
+         "event": "port:click",
+         "style": {
+          "visibility": "visible"
+         }
+        }
+       }
+      }
+     },
+     "items": [
+      {
+       "group": "in",
+       "index": 0,
+       "id": "e603488f-6e9b-497f-9aa1-2a74ee00ff5e"
+      },
+      {
+       "group": "out",
+       "index": 0,
+       "id": "b71c2066-9e03-4698-9ed3-2e714f17e78a"
+      }
+     ]
+    }
+   },
+   {
+    "shape": "edge",
+    "attrs": {
+     "line": {
+      "stroke": "#A4A5A9",
+      "strokeWidth": "2px",
+      "targetMarker": {
+       "tagName": "path",
+       "d": "M 12 -5 0 0 12 5 Z",
+       "strokeWidth": 2,
+       "fill": "#A4A5A9",
+       "stroke": "#A4A5A9"
+      },
+      "distance": 40
+     }
+    },
+    "id": "58e7ea4a-0abd-4b85-ad30-df87071e66a2",
+    "data": {
+     "itemId": 1652666280629
+    },
+    "source": {
+     "cell": "effb41ec-ea76-4355-b24c-0ed0c0bab2f5",
+     "port": "b71c2066-9e03-4698-9ed3-2e714f17e78a"
+    },
+    "target": {
+     "cell": "2d0aec8e-fb97-4e8a-b722-7d8ef90fdc57",
+     "port": "fb076936-fb8e-408a-9e5a-1462ed222bb6"
+    }
+   },
+   {
+    "position": {
+     "x": 760,
+     "y": 520
+    },
+    "size": {
+     "width": 120,
+     "height": 80
+    },
+    "view": "vue-shape-view",
+    "shape": "vue-shape",
+    "id": "2d0aec8e-fb97-4e8a-b722-7d8ef90fdc57",
+    "component": "node-cust",
+    "group": "hardware",
+    "data": {
+     "name": "音量控制器",
+     "group": "控制",
+     "uuid": "0X74E3",
+     "type": 1,
+     "fun": 1,
+     "formFile": "../../.音量配置.json",
+     "itemId": 1652666280629,
+     "subId": 3,
+     "configs": {
+      "name": "Vol_SysRing",
+      "list": [
+       {
+        "modeId": "id_1677549518737_0",
+        "name": "Vol_SysRing",
+        "current": "arg0",
+        "bypass": false,
+        "list": [
+         {
+          "name": "arg0",
+          "data": [
+           {
+            "id": "id_1676447331464_3",
+            "list": [
+             {
+              "id": "id_1681280938229_0",
+              "value": 0
+             },
+             {
+              "id": "id_1676447481291_4",
+              "value": 16
+             },
+             {
+              "id": "id_1676447941026_6",
+              "value": -45
+             },
+             {
+              "id": "id_1678088452701_0",
+              "value": 1
+             },
+             {
+              "id": "id_1677290960342_0",
+              "value": 0
+             },
+             {
+              "id": "id_1690535811640_0",
+              "value": 8
+             },
+             {
+              "id": "id_1676801188975_0",
+              "value": 8
+             }
+            ]
+           },
+           {
+            "id": "id_1677751149521_1",
+            "list": []
+           }
+          ],
+          "enable": true,
+          "bypass": false
+         }
+        ]
+       }
+      ]
+     }
+    },
+    "ports": {
+     "groups": {
+      "in": {
+       "position": "left"
+      },
+      "out": {
+       "position": "right",
+       "attrs": {
+        "text": {
+         "fill": "#2b3f57",
+         "font-size": "12",
+         "visibility": "visible",
+         "text": ""
+        },
+        "circle": {
+         "r": 6,
+         "magnet": true,
+         "stroke": "#7DC06E",
+         "strokeWidth": 2,
+         "fill": "#f2f2f2",
+         "event": "port:click",
+         "style": {
+          "visibility": "visible"
+         }
+        }
+       }
+      }
+     },
+     "items": [
+      {
+       "group": "in",
+       "index": 0,
+       "id": "fb076936-fb8e-408a-9e5a-1462ed222bb6"
+      },
+      {
+       "group": "out",
+       "index": 0,
+       "id": "4decb197-2782-4173-a600-958942b8109d"
+      }
+     ]
+    }
+   },
+   {
+    "shape": "edge",
+    "attrs": {
+     "line": {
+      "stroke": "#A4A5A9",
+      "strokeWidth": "2px",
+      "targetMarker": {
+       "tagName": "path",
+       "d": "M 12 -5 0 0 12 5 Z",
+       "strokeWidth": 2,
+       "fill": "#A4A5A9",
+       "stroke": "#A4A5A9"
+      },
+      "distance": 40
+     }
+    },
+    "id": "6802b0bc-6877-44ed-b2df-5dfd00e0308e",
+    "data": {
+     "itemId": 1652666280629
+    },
+    "source": {
+     "cell": "2d0aec8e-fb97-4e8a-b722-7d8ef90fdc57",
+     "port": "4decb197-2782-4173-a600-958942b8109d"
+    },
+    "target": {
+     "cell": "f218a69f-48eb-41d7-88a1-431a558d36df",
+     "port": "cd9a2388-655e-4ea7-b6cd-d13159326b91"
+    }
+   },
+   {
+    "position": {
+     "x": 960,
+     "y": 520
+    },
+    "size": {
+     "width": 80,
+     "height": 80
+    },
+    "view": "vue-shape-view",
+    "shape": "vue-shape",
+    "id": "f218a69f-48eb-41d7-88a1-431a558d36df",
+    "component": "node-cust",
+    "group": "hardware",
+    "data": {
+     "name": "BitWidth Convert",
+     "group": "渲染",
+     "uuid": "0X7DE5",
+     "type": 1,
+     "fun": 0,
+     "marco": "TCFG_CONVERT_NODE_ENABLE",
+     "inBit": 2,
+     "bitConsistency": false,
+     "outBit": 2,
+     "subId": 15,
+     "itemId": 1652666280629,
+     "configs": {
+      "name": "",
+      "list": []
+     },
+     "nodeDoc": "\\docs\\html\\SDK\\audio_effects\\BitWidth_Convert_manual.html",
+     "dynamicPort": {
+      "iMax": 0,
+      "iMin": 0,
+      "oMax": 0,
+      "oMin": 0
+     }
+    },
+    "ports": {
+     "groups": {
+      "in": {
+       "position": "left"
+      },
+      "out": {
+       "position": "right",
+       "attrs": {
+        "text": {
+         "fill": "#2b3f57",
+         "font-size": "12",
+         "visibility": "visible",
+         "text": ""
+        },
+        "circle": {
+         "r": 6,
+         "magnet": true,
+         "stroke": "#7DC06E",
+         "strokeWidth": 2,
+         "fill": "#f2f2f2",
+         "event": "port:click",
+         "style": {
+          "visibility": "visible"
+         }
+        }
+       }
+      }
+     },
+     "items": [
+      {
+       "group": "in",
+       "index": 0,
+       "id": "cd9a2388-655e-4ea7-b6cd-d13159326b91"
+      },
+      {
+       "group": "out",
+       "index": 1,
+       "id": "80ebc7f7-1a6c-4a89-bf59-9b7d3d17ee92"
+      }
+     ]
+    }
+   },
+   {
+    "shape": "edge",
+    "attrs": {
+     "line": {
+      "stroke": "#A4A5A9",
+      "strokeWidth": "2px",
+      "targetMarker": {
+       "tagName": "path",
+       "d": "M 12 -5 0 0 12 5 Z",
+       "strokeWidth": 2,
+       "fill": "#A4A5A9",
+       "stroke": "#A4A5A9"
+      },
+      "distance": 40
+     }
+    },
+    "id": "f4b0c1e7-071b-4d29-b716-7f97074faf00",
+    "data": {
+     "itemId": 1652666280629
+    },
+    "source": {
+     "cell": "f218a69f-48eb-41d7-88a1-431a558d36df",
+     "port": "80ebc7f7-1a6c-4a89-bf59-9b7d3d17ee92"
+    },
+    "target": {
+     "cell": "5fadac9e-0332-4a6c-9f2e-f43413902724",
+     "port": "affc17ac-7fd4-4f15-8df2-083e80e03886"
+    }
+   },
+   {
+    "position": {
+     "x": 1120,
+     "y": 520
+    },
+    "size": {
+     "width": 80,
+     "height": 80
+    },
+    "view": "vue-shape-view",
+    "shape": "vue-shape",
+    "id": "5fadac9e-0332-4a6c-9f2e-f43413902724",
+    "component": "node-cust",
+    "group": "hardware",
+    "data": {
+     "num": 1,
+     "name": "DAC",
+     "group": "输入输出",
+     "type": 2,
+     "fun": 1,
+     "formFile": "../../.DAC配置.json",
+     "uuid": "0XDCCD",
+     "itemId": 1652666280629,
+     "subId": 18,
+     "configs": {
+      "name": "DAC18",
+      "list": [
+       {
+        "modeId": "id_1677549518737_0",
+        "name": "DAC18",
+        "current": "arg0",
+        "list": [
+         {
+          "name": "arg0",
+          "data": [
+           {
+            "id": "id_1678246437678_10",
+            "list": [
+             {
+              "id": "id_1677642341249_0",
+              "value": 30
+             },
+             {
+              "id": "id_1677642343355_1",
+              "value": 8
+             },
+             {
+              "id": "id_1677642344547_2",
+              "value": 0
+             }
+            ]
+           }
+          ],
+          "enable": true,
+          "bypass": false
+         }
+        ],
+        "bypass": false
+       }
+      ]
+     },
+     "marco": "TCFG_DAC_NODE_ENABLE",
+     "dynamicPort": {
+      "iMax": 0,
+      "iMin": 0,
+      "oMax": 0,
+      "oMin": 0
+     }
+    },
+    "ports": {
+     "groups": {
+      "in": {
+       "position": "left"
+      },
+      "out": {
+       "position": "right",
+       "attrs": {
+        "text": {
+         "fill": "#2b3f57",
+         "font-size": "12",
+         "visibility": "visible",
+         "text": ""
+        },
+        "circle": {
+         "r": 6,
+         "magnet": true,
+         "stroke": "#7DC06E",
+         "strokeWidth": 2,
+         "fill": "#f2f2f2",
+         "event": "port:click",
+         "style": {
+          "visibility": "visible"
+         }
+        }
+       }
+      }
+     },
+     "items": [
+      {
+       "group": "in",
+       "id": "affc17ac-7fd4-4f15-8df2-083e80e03886",
+       "index": 0
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "bitWidth": 16,
+ "showConfigName": false,
+ "version": {
+  "code": 1,
+  "tool": "4.4.0"
+ }
+}

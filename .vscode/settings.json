@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "hjx_user_ble.h": "c",
+        "opus_stenc_api.h": "c",
+        "includes.h": "c"
+    }
+}
