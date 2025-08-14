@@ -51,7 +51,7 @@
 #define HJX_VERSION_NUMBER_3   '1'
 #define HJX_VERSION_NUMBER_4   '.'
 #define HJX_VERSION_NUMBER_5   '2'
-#define HJX_VERSION_NUMBER_6   '0'
+#define HJX_VERSION_NUMBER_6   '1'
 
 
 
